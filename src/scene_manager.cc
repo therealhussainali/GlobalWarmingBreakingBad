@@ -8,6 +8,9 @@ SceneManager::SceneManager(std::initializer_list<Scene> scenes)
 SceneManager::SceneManager()
     : current_scene_(0), change_scene_(false) {}
 
+// ong bruh add some comments
+// all these stds, making me act up fr
+    
 void SceneManager::update() {
   if (change_scene_) {
     (current_scene_ + 1 == scenes_.size()) ? current_scene_ = 0 : ++current_scene_;
